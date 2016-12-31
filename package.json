@@ -10,7 +10,9 @@
     "test": "ava",
     "watch:test": "ava --watch",
     "lint": "npm run lint:eslint -s",
-    "lint:eslint": "eslint $npm_package_config_jsSrc"
+    "lint:eslint": "eslint $npm_package_config_jsSrc",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -54,9 +56,11 @@
     "eslint-plugin-ava": "4.0.0",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-promise": "3.4.0",
+    "getstorybook": "1.7.0",
     "json-loader": "0.5.4",
     "serverless-webpack": "latest",
-    "webpack": "1.14.0"
+    "webpack": "1.14.0",
+    "@kadira/storybook": "^2.21.0"
   },
   "ava": {
     "require": "babel-register",
