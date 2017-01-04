@@ -5,9 +5,16 @@ module.exports = {
 
   ],
   module: {
-    loaders: [
-
-    ],
+    loaders: [{
+      test: /\.md$/,
+      loader: "raw"
+    }, {
+      test: /\.json$/,
+      loader: 'json'
+    }, {
+      test: /\.css$/,
+      loader: 'style!css'
+    }]
   },
   resolve: {
     fallback: [path.join(__dirname, '..', '..', 'node_modules')],
